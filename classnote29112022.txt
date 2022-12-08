@@ -1,0 +1,130 @@
+***
+***
+***
+
+i = 1
+while(i<=3):
+    j = 1
+    while(j<=3):
+        print("*" , end='')
+        j = j+1
+    print()
+    i = i+1
+
+
+
+***
+o**
+oo*
+
+i = 1
+while(i<=3):
+    j = 1
+    while(j<=3):
+        if i>j:
+            print("o" , end='')
+        else:
+            print("*" , end='')
+        j = j+1
+    print()
+    i = i+1
+    
+
+*oo
+o*o
+oo*
+
+i = 1
+while(i<=3):
+    j = 1
+    while(j<=3):
+        if i==j:
+            print("*" , end='')
+        else:
+            print("o" , end='')
+        j = j+1
+    print()
+    i = i+1	
+    
+
+
+i = 1
+while(i<=3):
+    j = 1
+    #begin inner
+    while(j<=3):
+        if i==1 or i==3 or j==1 or j==3:
+            print("*" , end='')
+        else:
+            print("o" , end='')
+        j = j+1
+    #end inner loop
+    print()
+    i = i+1
+    
+
+
+
+
+i = 1
+while(i<=4):
+    j = 1
+    #begin inner
+    while(j<=3):
+        if j==1 or j==3 or i==j:
+            print("*" , end='')
+        else:
+            print(" " , end='')
+        j = j+1
+    #end inner loop
+    print()
+    i = i+1
+
+
+    1   
+   121
+  12321
+ 1234321
+123454321
+
+i = 1
+while(i<=5):
+    #space part
+    s = 1
+    while(s <= 5-i):
+        print(" " , end='')
+        s = s+1
+        
+    #number part   
+    j = 1
+    while(j<=i):
+        print(j , end='')
+        j = j+1
+
+    #Second number part   
+    j = i-1
+    while(j>=1):
+        print(j , end='')
+        j = j-1
+    print()
+    
+    i = i+1
+    
+
+
+
+i = 1
+while(i<=5):  
+    j = 1
+    while(j<=5):
+
+        if i == 3 == j:
+            print("o" , end='')
+        elif i==1 or i==5 or j==1 or j==5 or i==j or i+j == 6:
+            print("*" , end='')
+        else :
+            print("#" , end='')
+        
+        j = j+1
+    print()
+    i = i+1

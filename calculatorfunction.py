@@ -11,6 +11,9 @@
 #defining the variable in global scope
 first , second , result = 0, 0 ,0
 
+#Modular Programming : break a complex code into
+#small individual unit of code
+
 #accept fuction
 def acceptData():
     global first

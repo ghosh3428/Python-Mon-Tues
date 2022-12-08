@@ -1,0 +1,87 @@
+Student Information System
+In this application, you will apply the concept of array of objects. Your application should have class student with some details such as Name, Dept, Reg.No, Mark1, Mark2, Mark3, Mark4, Avg, and Total.
+You can implement this application by creating menu choices…
+	a.	Create Students
+    Get the no.of students, create objects specified by the no.of students, 
+	b.	Enter the student details
+Ask the user to enter the details of each students.
+	c.	Display student details
+	d.	Searching a particular students details
+Get the student name/regno to search and display the
+			      particular student details.
+Finally, write the output and result.
+
+
+Single Student
+
+class Student:
+    def __init__(self):
+        self.dept = "Science"
+        self.regNo = "R23000000100"
+        self.m1 = 0
+        self.m2 = 0
+        self.m3=0
+        self.m4 = 0
+        self.total = 0
+        self.avg = 0
+        self.name = "New Student"
+        
+    def accept(self):
+        print("Enter student Name :")
+        self.name = input()
+        print("Enter Department :")
+        self.dept = input()
+        print("Enter Registration number :")
+        self.regNo = input()
+        print("Enter marks 1 :")
+        self.m1 = int(input())
+        print("Enter marks 2 :")
+        self.m2 = int(input())
+        print("Enter marks 3 :")
+        self.m3 = int(input())
+        print("Enter marks 4 :")
+        self.m4 = int(input())
+
+    def calculate(self):
+        self.total = self.m1 + self.m2 + self.m3 + self.m4
+        self.avg = round(self.total/4 , 2)
+        
+    def display(self):
+        print("-----------------STUDENT DETAILS--------------")
+        print("Student Name        :",self.name)
+        print("Department Name     :",self.dept)
+        print("Registration Number :",self.regNo)
+        print("Marks 1             :",self.m1)
+        print("Marks 2             :",self.m2)
+        print("Marks 3             :",self.m3)
+        print("Marks 4             :",self.m4)
+        print("Total Marks         :",self.total)
+        print("Average Marks       :",self.avg)
+        print("-----------------------------------------------")
+
+
+
+
+        
+
+s1 = Student()
+while(True):
+    print("-----Student Menu----")
+    print("1 . Add")
+    print("2 . Display")
+    print("0 . Exit")
+    print("--------------------")
+
+    i = int(input())
+    if i ==0 :
+        break
+    elif i == 1:
+        s1.accept()
+        s1.calculate()
+    elif i == 2:
+        s1.display()
+    else:
+        print("Incorrect Option !!!")
+
+    
+
